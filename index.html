@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauro Sánchez</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <figure class="logo">
+        <img src="./img/logo.png" height="200" alt="Logo">
+      </figure>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a class="link" href="#eventos">Experiencia</a>
+          </li>
+          <li>
+            <a class="link" href="#contacto">Trabajemos Juntos</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Hola¡ Soy <strong>Mauro Sánchez</strong><br/> Desarrollador <strong>Javascript</strong><br/> con pasión por el <strong>desarrollo</strong>
+      </h1>
+      <img class="hero-image" src="./img/hero.png" width="350px" height="300px" alt="Imagen principal del sitio">
+    </div>
+  </section>
+  <section class="portfolio" id="portafolio">
+    <div class="container">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Fab-Car</h3>
+          <h6 class="project-course">Blockchain-Hyperledger Fabric</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 10/12/2019</small></p>
+          <p class="project-url"><small><strong>Puedes verlo en:</strong>https://github.com/masanchez91/fabcar</small></p>
+          <p class="project-description">FabCar es una aplicación basada en web destinada a proporcionar una interfaz gráfica de usuario para la aplicación Fabcar presentada en Hyperledger Fabric .</p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="./img/fabcar.png" alt="Proyecto de React" width="500" height="">  
+        </figure>
+    </div>
+  </section>
+  <div class="container">
+    <h2 class="event-list-title">Habilidades y Tecnologías.</h2>
+  </div>
+  <section id="eventos" class="event-list">
+    <div class="container">
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="./img/habilidad.png" width="500" height="300" alt="Conferencias"/>
+        </figure>
+        <div class="event-detail">
+        <h3 class="event-title">Desarrollo Fullstack</h3>
+        <p class="event-description">El desarrollador fullstack es el habitante de los 2 mundos, del desarrollo front end y back end. Su tarea principal es tener conocimiento amplio tanto de front end como back end para apoyar en todo tipo de tarea, consulta o comunicación en el equipo de desarrollo.</p>
+        <a class="event-url" href="#contacto">Contacto</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="./img/node-js.jpg" width="500" height="300" alt="Conferencias"/>
+        </figure>
+        <div class="event-detail">
+        <h3 class="event-title">Crear un Api Rest con Node.js</h3>
+        <p class="event-description">Node.js es un entorno de programación que permite crear aplicaciones en el lado del servidor utilizando Javascript como lenguaje principal.</p>
+        <a class="event-url" href="#contacto">Contacto</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="./img/habilidad-2.png" width="500" height="300" alt="Conferencias"/>
+        </figure>
+        <div class="event-detail">
+        <h3 class="event-title">Ingeniería de Software</h3>
+        <p class="event-description">El desarrollo de software se ha convertido en una de las disciplinas más importantes en la actualidad, y se encuentra avanzando a pasos agigantados, ya que el consumo de productos software por parte de la sociedad es cada vez mayor y la necesidad de dar soluciones a problemas cotidianos con la tecnología se vuelve imprescindible.</p>
+        <a class="event-url" href="#contacto">Contacto</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="./img/base.jpg" width="500" height="300" alt="Conferencias"/>
+        </figure>
+        <div class="event-detail">
+        <h3 class="event-title">Diseño de Base de Datos</h3>
+        <p class="event-description">Una base de datos bien diseñada le brinda un completo acceso a la información deseada. Con un buen diseño dedicará menos tiempo a crear la base de datos y obtendrá resultados más exactos en menos tiempo.</p>
+        <a class="event-url" href="#contacto">Contacto</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="contacto" class="contact">
+    <div class="container">
+      <form action="/suscripcion/" class="form-email">
+        <h3>¿Creamos algo juntos?</h3>
+        <input type="email" placeholder="Déjame tu email">
+        <button>Enviar</button>
+      </form>
+      <div class="social">
+        <a href="https://twitter.com/maurosanchez25" class="social-link twitter"></a>
+        <a href="https://facebook.com/holycodecom" class="social-link facebook"></a>
+        <a href="https://github.com/masanchez91" class="social-link github"></a>
+        <a href="https://instagram.com/maurosanchez25" class="social-link instagram"></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="367819723716891"
+        theme_color="#0084ff"
+        logged_in_greeting="¡Hola! ¿Como podemos ayudarte?"
+        logged_out_greeting="¡Hola! ¿Como podemos ayudarte?">
+      </div>
+      <div>
+        <p>Curso de Desarrollo Web <img src="./img/holycode.png" width="100" alt="holycode"></p>
+      </div>
+      <div>
+        <p>
+          Designed with 🚀 by <a href="https://twitter.com/maurosanchez25">@maurosanchez25</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
