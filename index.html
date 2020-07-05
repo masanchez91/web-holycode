@@ -7,12 +7,13 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <figure class="logo">
-        <img src="./img/logo.png" height="200" alt="Logo">
+        <img src="./img/logo.png" height="50" alt="Logo">
       </figure>
       <nav class="menu">
         <ol>
@@ -29,14 +30,14 @@
       </nav>
     </div>
   </header>
-  <section class="hero">
+  <!-- <section class="hero">
     <div class="container">
       <h1>
         Hola¡ Soy <strong>Mauro Sánchez</strong><br/> Desarrollador <strong>Javascript</strong><br/> con pasión por el <strong>desarrollo</strong>
       </h1>
       <img class="hero-image" src="./img/hero.png" width="350px" height="300px" alt="Imagen principal del sitio">
     </div>
-  </section>
+  </section> -->
   <section class="portfolio" id="portafolio">
     <div class="container">
       <h2>Portafolio (Proyectos Destacados)</h2>
@@ -117,7 +118,6 @@
   </section>
   <footer class="footer">
     <div class="container">
-      <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
@@ -133,7 +133,6 @@
         js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-      <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
         page_id="367819723716891"
