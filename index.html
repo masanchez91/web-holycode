@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <i class="icon-menu burger-button" id="burger_menu"></i>
   <header class="header">
     <div class="container">
       <figure class="logo">
@@ -30,14 +31,14 @@
       </nav>
     </div>
   </header>
-  <!-- <section class="hero">
+  <section class="hero">
     <div class="container">
       <h1>
         Hola¡ Soy <strong>Mauro Sánchez</strong><br/> Desarrollador <strong>Javascript</strong><br/> con pasión por el <strong>desarrollo</strong>
       </h1>
       <img class="hero-image" src="./img/hero.png" width="350px" height="300px" alt="Imagen principal del sitio">
     </div>
-  </section> -->
+  </section>
   <section class="portfolio" id="portafolio">
     <div class="container">
       <h2>Portafolio (Proyectos Destacados)</h2>
@@ -150,5 +151,29 @@
       </div>
     </div>
   </footer>
+  <script>
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+    const menu = document.querySelector('.menu');
+    const burgerButton = document.querySelector('#burger_menu');
+    ipad.addListener(validation)
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener('click', hideShow);
+      } else {
+        burgerButton.removeEventListener('click', hideShow);
+      }
+    }
+
+    validation(ipad);
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+      } else {
+        menu.classList.add('is-active');
+      }
+    }
+  </script>
 </body>
 </html>
